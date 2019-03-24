@@ -365,7 +365,7 @@ and&#13;
                             <recovery_expression>{HUAWEI OLT:OltLinktState[{#OLTPORT}].diff()}=1&#13;
 and&#13;
 {HUAWEI OLT:OltLinktState[{#OLTPORT}].last()}=1</recovery_expression>
-                            <name>Zmiana statusu linku portu {#OLTPORT} - link down</name>
+                            <name>Interface status changed {#OLTPORT} - link down</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
@@ -589,7 +589,7 @@ and&#13;
                             <recovery_expression>{HUAWEI OLT:OntRxPower[{#SNMPINDEX}].diff()}&#13;
 and&#13;
 {HUAWEI OLT:OntRxPower[{#SNMPINDEX}].last()}&lt;-28</recovery_expression>
-                            <name>ONT {#SNMPVALUE} ma wysoki sygnał (&gt;30)</name>
+                            <name>ONT {#SNMPVALUE} RX Power alert(&gt;30)</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
